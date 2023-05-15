@@ -1,6 +1,11 @@
-#-----------------[ IMPORT-MODULE ]-------------------#
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+# Hemker Martabak
+# Github.com/Shinobi99
+import requests,json,os,sys,random,datetime,subprocess,time,re,calendar,base64,zlib,string,platform,uuid
+from bs4 import BeautifulSoup as sop
+from concurrent.futures import ThreadPoolExecutor as ThreadPool
+from concurrent.futures import ThreadPoolExecutor as tred
 from rich.table import Table as me
 from rich.console import Console as sol
 from bs4 import BeautifulSoup as sop
@@ -14,6 +19,7 @@ from rich.columns import Columns as col
 from rich import print as rprint
 from rich import pretty
 from rich.tree import Tree
+from requests import get as Shinoby10
 from rich.text import Text as tekz
 try:
 	import rich
