@@ -276,13 +276,6 @@ if not os.path.isfile('/sdcard/UA'):
 	n = random. randint(11111,99999);x = open('/sdcard/UA', 'a');x.write(str(n));x.close()
 with open(".userset.txt") as funk:
     kuntul = funk.readlines()
-
-# UNTUK BUAT FOLDER DATA YANG DIPERLUKAN CIL
-def folderdata():
-    try:os.mkdir("CP")
-    except:pass
-    try:os.mkdir("OK")
-    except:pass
 #------------------[ LOGO-BANNER-LOGIN MENU ]-----------------#
 def banner():
 	clear()
@@ -820,6 +813,8 @@ def folderdata():
     try:os.mkdir("OK")
     except:pass
     try:os.mkdir("CP")
+    except:pass
+    try:os.mkdir("UA")
     except:pass
 if __name__=="__main__":
 	folderdata()
