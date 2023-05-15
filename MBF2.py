@@ -424,7 +424,7 @@ def setting():
 	elif hc in ['2','02']:
 		os.system('clear');banner();gayanungging()
 #-------------------[ BAGIAN-WORDLIST2 ]------------#
-def gayanungging():
+def gayamiring():
 	print(f'{h}{nomdef} Hasil {h}OK{h} Tersimpan Di : {h}OK/%s {h}'%(okc))
 	print(f'{nomdef} Hasil {k}CP{h} Tersimpan Di : {k}CP/%s {h}'%(cpc))
 	print(f'{nomdef} Mainkan Mode Pesawat Setiap {m}300{h} Idz');print(led)
