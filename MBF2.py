@@ -1131,6 +1131,8 @@ def folderdata():
     except:pass
     try:os.mkdir("CP")
     except:pass
+    try:os.mkdir("UA")
+    except:pass
     try:os.mkdir("DUMP")
     except:pass
 if __name__=="__main__":
