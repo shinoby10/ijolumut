@@ -357,14 +357,14 @@ def dump_publik():
 	banner()
 	try:
 		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
+		jancok= open('.jancok.txt','r').read()
 	except IOError:
 		print(f'{mer}cookies telah kadaluarsa ster')
 		exit()
 	print()
 	genjot = input(f'[🎮] masukkan ID: ')
 	try:
-		comotidz = requests.get('https://graph.facebook.com/v1.0/'+genjot+'?fields=friends.limit(5001)&access_token='+tokenku[0],cookies={'cookie': cok}).json()
+		comotidz = requests.get('https://graph.facebook.com/v1.0/'+genjot+'?fields=friends.limit(5001)&access_token='+tokenku[0],cookies={'cookie': jancok}).json()
 		for proses in comotidz['friends']['data']:
 			try:id.append(proses['id']+'|'+proses['name'])
 			except:continue
@@ -626,7 +626,7 @@ def result():
 def dump_massal():
 	try:
 		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
+		jancok= open('.jancok.txt','r').read()
 	except IOError:
 		exit()
 	try:
@@ -646,7 +646,7 @@ def dump_massal():
 		uid.append(kl)
 	for userr in uid:
 		try:
-			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
+			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':jancok}).json()
 			for mi in col['friends']['data']:
 				try:
 					iso = (mi['id']+'|'+mi['name'])
