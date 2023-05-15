@@ -418,9 +418,11 @@ def setting():
 		os.system('clear');banner();gayanungging()
 #-------------------[ BAGIAN-WORDLIST2 ]------------#
 def gayamiring():
-	print(f'{h}{nomdef} Hasil {h}OK{h} Tersimpan Di : {h}OK/%s {h}'%(okc))
-	print(f'{nomdef} Hasil {k}CP{h} Tersimpan Di : {k}CP/%s {h}'%(cpc))
-	print(f'{nomdef} Mainkan Mode Pesawat Setiap {m}300{h} Idz');print(led)
+	global prog,des
+	print(f'{h}[🎮] Hasil {h}OK{h} Tersimpan Di : {h}OK/%s {h}'%(okc))
+	print(f'[🎮] Hasil {k}CP{h} Tersimpan Di : {k}CP/%s {h}'%(cpc))
+	print(f'[🎮] Mainkan Mode Pesawat Setiap {m}300{h} Idz');print(led)
+	prog = Progress(SpinnerColumn('earth'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	with tred(max_workers=35) as pool:
 		for yuzong in id2:
 			try:
@@ -470,9 +472,11 @@ def gayamiring():
 	print(f'{nomdef} HASIL CRACK{k} CP : {h}%s '%(cp));print(led)
 #-------------------[ BAGIAN-WORDLIST3 ]------------#
 def gayanungging():
-	print(f'{h}{nomdef} Hasil {h}OK{h} Tersimpan Di : {h}OK/%s {h}'%(okc))
-	print(f'{nomdef} Hasil {k}CP{h} Tersimpan Di : {k}CP/%s {h}'%(cpc))
-	print(f'{nomdef} Mainkan Mode Pesawat Setiap {m}300{h} Idz');print(led)
+	global prog,des
+	print(f'{h}[🎮] Hasil {h}OK{h} Tersimpan Di : {h}OK/%s {h}'%(okc))
+	print(f'[🎮] Hasil {k}CP{h} Tersimpan Di : {k}CP/%s {h}'%(cpc))
+	print(f'[🎮] Mainkan Mode Pesawat Setiap {m}300{h} Idz');print(led)
+	prog = Progress(SpinnerColumn('earth'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	with tred(max_workers=35) as pool:
 		for yuzong in id2:
 			try:
